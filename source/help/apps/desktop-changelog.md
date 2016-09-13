@@ -1,14 +1,118 @@
 # Mattermost Desktop Application Changelog
 
+## Release v3.4.0
+
+Release date: 2016-09-22
+
+### Improvements
+
+#### Windows
+ - Current team and channel name shown in window caption
+ - Team tab is bolded for unread messages and has a red dot with a numbeer counter for unread mentions
+ - Added an option to configure whether a red badge is shown on taskbar icon for unread messages
+ - Added new shortcuts:
+     - `CTRL + S`: sets focus on the Mattermost search box
+     - `CTRL + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
+     - `ALT + Left Arrow`: go to previous page in history
+     - `ALT + Right Arrow`: go to next page in history
+ - Added access to the settings menu from the system tray icon
+ - Attempt to reconnect periodically if a page fails to load
+ - Added validation for name and URL when adding a new team on the Settings page
+ - The app now works as a single instance (an existing application instance will be used when launching a new one)
+
+#### OS X
+ - Current team and channel name shown in window caption
+ - Team tab is bolded for unread messages and has a red dot with a count of unread mentions
+ - Added an option to configure whether a red badge is shown on taskbar icon for unread messages
+ - Added an option to configure whether a red badge is shown on taskbar icon for unread messages
+ - Added new shortcuts:
+     - `CMD + S`: sets focus on the Mattermost search box
+     - `CMD + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
+     - `CMD + [`: go to previous page in history
+     - `CMD + ]`: go to next page in history
+ - Attempt to reconnect periodically if a page fails to load
+ - Added validation for name and URL when adding a new team on the Settings page
+
+#### Linux (Beta)
+ - Current team and channel name shown in window caption
+ - Team tab is bolded for unread messages and has a red dot with a count of unread mentions
+ - Added an option to flash taskbar icon when a new message is received
+ - Added a red badge to count mentions on the taskbar icon (for Unity)
+ - Added a script to create `Mattermost.desktop` desktop entry to help [integrate the application into a desktop environment](https://wiki.archlinux.org/index.php/Desktop_entries) more easily
+ - Added new shortcuts:
+     - `CTRL + S`: sets focus on the Mattermost search box
+     - `CTRL + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
+     - `ALT + Left Arrow`: go to previous page in history
+     - `ALT + Right Arrow`: go to next page in history
+ - Added access to the settings menu from the system tray icon
+ - Attempt to reconnect periodically if a page fails to load
+ - Added validation for name and URL when adding a new team on the Settings page
+ - The app now works as a single instance (an existing application instance will be used when launching a new one)
+
+### Bug Fixes
+
+#### Windows
+ - Cut, copy and paste are shown in the user interface only when the commands are available
+ - Copying link addresses now work properly
+ - Saving images by right-clicking the image preview now works
+ - Refreshing the app page no longer takes you to the team selection page, but keeps you on the current channel
+ - Removed misleading shortcuts from the system tray menu
+ - Removed unclear desktop notifications when the application page fails to load
+ - Fixed the Mattermost icon for desktop notifications in Windows 10
+ - Fixed an issue where the maximized state of the app window was lost in some cases
+ - Fixed an issue where shortcuts didn't work when switching applications or tabs in some cases
+ - Fixed a pixelated application icon in top left of the window
+ - Fixed an issue where the application kept focus after closing the app window
+
+#### OS X
+ - Cut, copy and paste are shown in the user interface only when the commands are available
+ - Copying link addresses now work properly
+ - Saving images by right-clicking the image preview now works
+ - Refreshing the app page no longer takes you to the team selection page, but keeps you on the current channel
+ - Fixed an issue where the maximized state of the app window was lost in some cases
+ - Fixed an issue where shortcuts didn't work when switching applications or tabs in some cases
+
+#### Linux (Beta)
+ - Cut, copy and paste are shown in the user interface only when the commands are available
+ - Copying link addresses now work properly
+ - Saving images by right-clicking the image preview now works
+ - Refreshing the app page no longer takes you to the team selection page, but keeps you on the current channel
+ - Removed misleading shortcuts from the system tray menu
+ - Removed unclear desktop notifications when the application page fails to load
+ - Fixed an issue where the maximized state of the app window was lost in some cases
+ - Fixed an issue where shortcuts didn't work when switching applications or tabs in some cases
+
+### Known Issues
+
+#### Windows
+ - Copying a link address and pasting it inside the app doesn't work
+ - YouTube videos do not work if mixed content is enabled from app settings
+
+#### OS X
+ - YouTube videos do not work if mixed content is enabled from app settings
+
+#### Linux
+ - YouTube videos do not work if mixed content is enabled from app settings
+ - [Ubuntu - 64 bit] Right clicking taskbar icon and choosing **Quit** only minimizes the app
+ - [Ubuntu - 64 bit] [Direct message notification comes as a streak of line instead of a pop up](https://github.com/mattermost/platform/issues/3589)
+
+### Contributors
+
+Many thanks to all our contributors. In alphabetical order:
+
+- [akashnimare](https://github.com/akashnimare), [jasonblais](https://github.com/jasonblais), [jgis](https://github.com/jgis), [jnugh](https://github.com/jnugh), [Razzeee](https://github.com/Razzeee), [St-Ex](https://github.com/St-Ex), [timroes](https://github.com/timroes), [yuya-oc](https://github.com/yuya-oc)
+
 ## Release v1.3.0
 
-Release date: 2016-07-16
+Release date: 2016-07-18
+
+[Download the latest version here](https://about.mattermost.com/downloads/).
 
 ### Improvements
 
 #### Windows
 - Added an installer for better install experience.
-- The app now minimizes to the system tray when closed.
+- The app now minimizes to the system tray when application window is closed.
 - Added an option to launch application on login.
 - Added an option to blink the taskbar icon when a new message has arrived.
 - Added tooltip text for the system tray icon in order to show count of unread channels/mentions.
@@ -18,14 +122,14 @@ Release date: 2016-07-16
 
 #### OS X
 - Added colored badges to the menu icon when there are unread channels/mentions.
-- Added an option to minimize the app to the system tray when closed.
+- Added an option to minimize the app to the system tray when application window is closed.
 - Added auto-reloading when tab fails to load the team.
 - Added the ability to access all of your teams by right clicking the system tray icon.
 
 #### Linux (Beta)
 - Added an option to show the icon on menu bar (requires libappindicator1 on Ubuntu).
 - Added an option to launch application on login.
-- Added an option to minimize the app to the system tray when closed.
+- Added an option to minimize the app to the system tray when application window is closed.
 - Added auto-reloading when tab fails to load the team.
 - Added the ability to access all of your teams by right clicking the system tray icon.
 
@@ -43,7 +147,7 @@ Release date: 2016-07-16
     - Ctrl+Tab or Alt+Command+Right (Menu Bar -> Window -> Select Next Team): Switch to the next window.
     - Ctrl+Shift+Tab or Alt+Command+Left (Menu Bar -> Window -> Select Previous Team): Switch to the previous window.
     - Right click on the tray item, to see an overview of all your teams. You can also select one and jump right into it.
-  - Added **Help** to the Menu Bar, which includes
+- Added **Help** to the Menu Bar, which includes
     - Link to [**Mattermost Docs**](docs.mattermost.com)
     - Field to indicate the application version number.
 
@@ -66,10 +170,16 @@ Release date: 2016-07-16
 #### OS X
 - Fixed two icons appearing on a notification.
 
+### Known Issues
+
+#### Linux
+- [Ubuntu - 64 bit] Right clicking taskbar icon and choosing **Quit** only minimizes the app
+- [Ubuntu - 64 bit] [Direct message notification comes as a streak of line instead of a pop up](https://github.com/mattermost/platform/issues/3589)
+
 ### Contributors
 
 Many thanks to all our contributors. In alphabetical order:
- 
+
 - [CarmDam](https://github.com/CarmDam), [it33](https://github.com/it33), [jasonblais](https://github.com/jasonblais), [jnugh](https://github.com/jnugh), [magicmonty](https://github.com/magicmonty), [MetalCar](https://github.com/MetalCar), [Razzeee](https://github.com/Razzeee), [yuya-oc](https://github.com/yuya-oc)
 
 ## Release v1.2.1 (Beta)
@@ -84,9 +194,8 @@ Many thanks to all our contributors. In alphabetical order:
 - Added a right-click menu option for tray icon to open the Desktop application on Windows and OS X.
 
 ### Known issues
-- The shortcuts can't switch teams twice in a raw.
+- The shortcuts can't switch teams twice in a row.
 - The team pages are not correctly rendered until the window is resized when the zoom level is changed.
-
 
 ## Release v1.2.0 (Beta)
 
@@ -130,13 +239,11 @@ Many thanks to all our contributors. In alphabetical order:
 #### Linux
 - Alt+Shift opens menu on Cinnamon desktop environment.
 
-
 ## Release v1.1.0 (Beta)
 
 - **Released:** 2016-03-30
 
 The `electron-mattermost` project is now the official desktop application for the Mattermost open source project.
-
 
 ### Changes
 
@@ -150,7 +257,6 @@ The `electron-mattermost` project is now the official desktop application for th
     - OS X: `ditto ~/Library/Application\ Support/electron-mattermost/config.json ~/Library/Application\ Support/Mattermost/config.json`
     - Linux: `mkdir -p ~/.config/Mattermost && cp ~/.config/electron-mattermost/config.json ~/.config/Mattermost/config.json`
 
-
 ### Improvements
 
 #### All platforms
@@ -163,7 +269,6 @@ The `electron-mattermost` project is now the official desktop application for th
 #### Windows
 - Show a small circle on the tray icon when there are new messages.
 
-
 ### Fixes
 
 #### Windows
@@ -173,7 +278,6 @@ The `electron-mattermost` project is now the official desktop application for th
 - **File** > **About** does not bring up version number dialog.
 - Ubuntu: Notification is not showing up.
 - The view crashes when freetype 2.6.3 is used in system.
-
 
 ### Known issues
 
