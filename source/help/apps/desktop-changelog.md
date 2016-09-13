@@ -24,7 +24,6 @@ Release date: 2016-09-22
  - Current team and channel name shown in window caption
  - Team tab is bolded for unread messages and has a red dot with a count of unread mentions
  - Added an option to configure whether a red badge is shown on taskbar icon for unread messages
- - Added an option to configure whether a red badge is shown on taskbar icon for unread messages
  - Added new shortcuts:
      - `CMD + S`: sets focus on the Mattermost search box
      - `CMD + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
