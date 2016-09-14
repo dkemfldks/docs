@@ -4,6 +4,8 @@
 
 Release date: 2016-09-22
 
+This release contains a security update and it is highly recommended that users upgrade to this version. 
+
 ### Improvements
 
 #### Windows
@@ -15,9 +17,10 @@ Release date: 2016-09-22
      - `CTRL + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
      - `ALT + Left Arrow`: go to previous page in history
      - `ALT + Right Arrow`: go to next page in history
+ - Upgraded the Settings page user interface
  - Added access to the settings menu from the system tray icon
- - Attempt to reconnect periodically if a page fails to load
  - Added validation for name and URL when adding a new team on the Settings page
+ - The app now tries to reconnect periodically if a page fails to load
  - The app now works as a single instance (an existing application instance will be used when launching a new one)
 
 #### OS X
@@ -29,7 +32,8 @@ Release date: 2016-09-22
      - `CMD + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
      - `CMD + [`: go to previous page in history
      - `CMD + ]`: go to next page in history
- - Attempt to reconnect periodically if a page fails to load
+ - Upgraded the Settings page user interface
+ - The app now tries to reconnect periodically if a page fails to load
  - Added validation for name and URL when adding a new team on the Settings page
 
 #### Linux (Beta)
@@ -43,8 +47,9 @@ Release date: 2016-09-22
      - `CTRL + SHIFT + S`: sets focus on the Mattermost search box and adds `in:[channel_url]` to search in current channel
      - `ALT + Left Arrow`: go to previous page in history
      - `ALT + Right Arrow`: go to next page in history
+ - Upgraded the Settings page user interface
  - Added access to the settings menu from the system tray icon
- - Attempt to reconnect periodically if a page fails to load
+ - The app now tries to reconnect periodically if a page fails to load
  - Added validation for name and URL when adding a new team on the Settings page
  - The app now works as a single instance (an existing application instance will be used when launching a new one)
 
@@ -99,7 +104,7 @@ Release date: 2016-09-22
 
 Many thanks to all our contributors. In alphabetical order:
 
-- [akashnimare](https://github.com/akashnimare), [jasonblais](https://github.com/jasonblais), [jgis](https://github.com/jgis), [jnugh](https://github.com/jnugh), [Razzeee](https://github.com/Razzeee), [St-Ex](https://github.com/St-Ex), [timroes](https://github.com/timroes), [yuya-oc](https://github.com/yuya-oc)
+- [akashnimare](https://github.com/akashnimare), [asaadmahmood](https://github.com/asaadmahmood), [jasonblais](https://github.com/jasonblais), [jgis](https://github.com/jgis), [jnugh](https://github.com/jnugh), [Razzeee](https://github.com/Razzeee), [St-Ex](https://github.com/St-Ex), [timroes](https://github.com/timroes), [yuya-oc](https://github.com/yuya-oc)
 
 ## Release v1.3.0
 
