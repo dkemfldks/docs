@@ -79,7 +79,7 @@ This setting is off by default.
 
 If your server is hosted on `https://`, insecure content, images and scripts with `http://` are not rendered by default. This option allows such content to be rendered. If you do enable it, please be mindful of potential security risks shared over `http://` protocols.
 
-This setting is off by default.
+This setting is on by default.
 
 Note: Enabling both secure and insecure content will break YouTube videos. An open issue for ``electron`` on which the app is built is under investigation: https://github.com/electron/electron/issues/2749
 
@@ -104,7 +104,6 @@ This setting is off by default.
 **Show red badge on taskbar icon to indicate unread messages** (Windows, OS X)
 
 If you have multiple active teams (either on a single or multiple servers), having a red badge for unread messages may be annoying as it would likely be displayed most of the time. You may use this setting to configure when the red badge is shown on the taskbar icon. 
-
 If enabled, a red badge is shown for unread messages with a number count indicating unread mentions. If disabled, a red badge is only shown for unread mentions (with a number count).
 
 This setting is on by default.
@@ -113,7 +112,7 @@ This setting is on by default.
 
 Configure whether the taskbar icon flashes when a new message is received on any of your active teams and servers.
 
-This setting is on by default.
+This setting is off by default.
 
 Menu Bar
 ---------------------------------------------------------------------
