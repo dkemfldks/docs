@@ -10,13 +10,13 @@ They support all the features of the web experience, plus:
 - Auto-start Mattermost when a user logs into their machine
 - (Windows) Add Mattermost to Start menu, taskbar and system tray
 - (Mac) Add Mattermost to the applications Dock
-- (Linux) ``Desktop Entry`` for the application to `integrate into a desktop environment <https://wiki.archlinux.org/index.php/Desktop_entries>`_
+- (Linux) ``Desktop Entry`` for the application to more easily `integrate into a desktop environment <https://wiki.archlinux.org/index.php/Desktop_entries>`_
 
 Below is a list of additional resources:
 
  - `Guide for configuring your desktop app experience <https://docs.mattermost.com/help/apps/desktop-guide.html>`_
  - `Changelog <https://docs.mattermost.com/help/apps/desktop-changelog.html>`_
- - `Contributor’s guide <https://docs.mattermost.com/help/apps/desktop-contribute.html>`_
+ - Contributor’s guide (coming soon)
  - `Source code <https://github.com/mattermost/desktop>`_
 
 You can `download the apps directly from our downloads page <https://about.mattermost.com/downloads/>`_. You may also use the following installation guides for Windows, Mac and Linux:
@@ -32,7 +32,7 @@ You can `download the apps directly from our downloads page <https://about.matte
 
 This will start an installer for the app. Once finished, the Mattermost desktop app will open automatically.
 
-**Mac OS X 10.9+**
+**Mac OS X 10.9+:**
 
 1. Download `latest version of the Mattermost desktop app <https://releases.mattermost.com/desktop/1.3.0/mattermost-desktop-1.3.0-osx.tar.gz>`_
 
@@ -44,7 +44,7 @@ This will start an installer for the app. Once finished, the Mattermost desktop 
 
 The Mattermost desktop should open automatically.
 
-**Linux (Beta)**
+**Linux (Beta):**
 
 1. Download latest version of the Mattermost desktop app:
 
