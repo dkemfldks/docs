@@ -1,4 +1,4 @@
-# Mattermost Desktop Application Changelog
+# Desktop Application Changelog
 
 ## Release v3.4.0
 
