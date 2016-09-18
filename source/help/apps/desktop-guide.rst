@@ -17,7 +17,7 @@ Team management
 
 You can connect to multiple Mattermost servers from a single interface on the desktop app.
 
-**Adding servers**
+**Adding servers and teams**
 
 To add a new server on the Mattermost instance, 
 
@@ -29,7 +29,7 @@ You can now access all teams you have joined in the server once you have saved t
 
 You may also add a separate instance for each team, if you'd like.
 
-**Editing servers**
+**Editing servers and teams**
 
 To edit a server, 
 
@@ -37,9 +37,9 @@ To edit a server,
 2. Edit **Name** and/or **URL**.
 3. Click **Save**.
 
-**Deleting servers**
+**Removing servers and teams**
 
-To delete a server, click on **Remove** next to the server or a team you want removed. Note that this action cannot be undone.
+To remove a server from your desktop app environment, click on **Remove** next to the server or a team you want removed. Note that this action cannot be undone.
 
 Settings
 ---------------------------------------------------------------------
@@ -131,7 +131,7 @@ Below is a list of menu options with the corresponding keyboard shortcuts. For M
 **Edit**
 
  - Undo (CTRL + Z): Reverses previous action
- - Redo (CTRL + SHIFT + Z): Redoes the most recent action
+ - Redo (CTRL + SHIFT + Z; CTRL + Y): Redoes the most recent action
  - Cut (CTRL + X): Cuts selected text
  - Copy (CTRL + C): Copies selected text
  - Paste (CTRL + V): Pastes text from the clipboard
@@ -145,7 +145,7 @@ Below is a list of menu options with the corresponding keyboard shortcuts. For M
  - Clear Cache and Reload (CTRL + SHIFT + R): Clears cached content in application and reloads the current page
  - Toggle Full Screen (F11): Toggles the application window full screen mode
  - Actual Size (CTRL + 0) - Resets zoom level to default
- - Zoom In (CTRL + SHIFT + =; CTRL + =) - Increase font size (zoom in)
+ - Zoom In (CTRL + =; CTRL + SHIFT + =) - Increase font size (zoom in)
  - Zoom In (CTRL + MINUS) - Decrease font size (zoom out)
  - Toggle Developer Tools (CTRL + SHIFT + I): Toggles sidebar showing developer tools
 
@@ -164,5 +164,5 @@ Below is a list of menu options with the corresponding keyboard shortcuts. For M
 
 **Help**
 
- - Mattermost Docs - Links to the `official Mattermost documentation <https://docs.mattermost.com>`_ .
+ - Mattermost Docs - Links to a parent page for `Desktop applications documentation <https://docs.mattermost.com/install/desktop.html>`_ .
  - Version - Indicates the desktop application version in use
